@@ -13,8 +13,9 @@ class App extends Component {
   return (
     <div className="App">
       
-     <ParentComponent/>
-     {/*<UserGreeting/>*/}
+      <UserGreeting/>
+     {/*<ParentComponent/> Aula 15*/} 
+     
 
     </div>
   );
