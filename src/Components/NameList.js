@@ -1,4 +1,4 @@
-import React from "react";
+/*import React from "react";
 import Person from "./Person";
 
 function NameList() {
@@ -28,4 +28,4 @@ function NameList() {
   return <div>{NameList}</div>;
 }
 
-export default NameList;
+export default NameList;*/
