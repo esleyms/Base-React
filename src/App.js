@@ -1,13 +1,14 @@
 import React, {Component} from 'react'
 import './App.css'
-import Form from './Components/Form';
+import LifecycleA from './Components/LifecycleA'
+import LifecycleB from './Components/LifecycleB';
 class App extends Component {
   render() {
   return (
     <div className="App">
     
-   <Form />
-   
+   <LifecycleA/>
+   <LifecycleB/>
 
     </div>
   );
