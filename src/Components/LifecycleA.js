@@ -20,29 +20,32 @@ class LifecycleA extends Component {
     componentDidMount() {
       console.log('ifegetDerivedStateFromProps')
     }
-  render() {
-    
-   console.log('LifecycleA render')
-  }
-  shouldComponentUpdate() {
-    console.log('Lifecyclea ShouldComponentUpdate')
-    return true
-   
-  }
-        
-  getSnapshotBeforeUpdate(prevProps, preState) {
-    console.log('Lifecyclea getSnapshotBeforeUpdate')
-   
-    componentDidUpdate() {
-      console.log('Lifecyclea componentDidUpdate' )
-    }
   
-}
+   shouldComponentUpdate() {
+     console.log('Lifecyclea ShouldComponentUpdate')
+     return true
+   
+    }
+        
+   getSnapshotBeforeUpdate(prevProps, preState) {
+    console.log('Lifecyclea getSnapshotBeforeUpdate')
+    return null
+   }
+    componentDidUpdate() {
+      console.log('LifecycleaA componentDidUpdate')
+    }
+     changeState = () => {
+      this.setState ({
+        name: 'Codevoluntion'
+      })
+     }
+
  render() {
    console.log('LifecycleA render')
     return(
        <div>
           <div>Lifecycle A</div>
+          <button onClick={this.changeState}>Change state</button>
          <LifecycleB/>
        </div>
     )
