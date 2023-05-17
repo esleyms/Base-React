@@ -1,15 +1,16 @@
 import React, {Component} from 'react'
 import './App.css'
+import ParentComp from './Components/ParentComp';
 
-import Table from './Components/Table';
+
 
 class App extends Component {
   render() {
   return (
     <div className="App">
     
-    <Table/>
     
+    <ParentComp/>
 
     </div>
   );
