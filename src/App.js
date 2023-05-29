@@ -1,15 +1,13 @@
 import React, { Component } from 'react';
 import './App.css';
-import ComponentC from './Components/ComponentC';
-import { UserProvider } from './Components/UserContext';
+import PostList from './Components/PostList';
+
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <UserProvider value="Vishwas">
-      <ComponentC/>
-      </UserProvider>
+       <PostList/>
       </div>
     )
   }
