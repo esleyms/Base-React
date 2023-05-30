@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
-//import PostList from './Components/PostList';
-import PostForm from './Components/PostForm';
+import ClassCounter from './Components/ClassCounter';
+import HookCounter from './Components/HookCounter';
+
 
 
 class App extends Component {
@@ -9,9 +10,8 @@ class App extends Component {
     return (
       <div className="App">
 
-        <PostForm/>
-
-       {/*<PostList/>*/}
+     {/*<ClassCounter/>*/}
+     <HookCounter/>
       </div>
     )
   }
