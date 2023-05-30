@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-import HookCounterFour from './Components/HookCounterFour';
+//import ClassCounterOne from './Components/ClassCounterOne';
+import HookCounterOne from './Components/HookCounterOne';
 
 
 
@@ -10,7 +11,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <HookCounterFour/>
+        {/*<ClassCounterOne/>*/}
+        <HookCounterOne/>
       </div>
     )
   }
