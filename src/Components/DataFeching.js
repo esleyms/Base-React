@@ -4,37 +4,45 @@ import axios from 'axios';
 function DataFetching() {
   const [id, setId] = useState('');
   const [post, setPost] = useState(null);
+  const [IdFromButtonClick, setIdFromButtonClick] = useState(1);
+  const [error, setError] = useState(null);
+
+  const handleClick = () => {
+    if (!id || isNaN(id)) {
+      setError('ID inválido');
+      return;
+    }
+
+    setIdFromButtonClick(id);
+    setError(null);
+  }
 
   useEffect(() => {
     if (id) {
       axios
-        .get(`https://jsonplaceholder.typicode.com/posts/${id}`)
+        .get(`https://jsonplaceholder.typicode.com/posts/${IdFromButtonClick}`)
         .then(res => {
           setPost(res.data);
+          setError(null);
         })
         .catch(err => {
           if (err.response && err.response.status === 404) {
-            console.log('Post not found');
+            setError('Post não encontrado');
           } else {
-            console.log('Error:', err.message);
+            setError('Erro ao buscar o post');
           }
         });
     }
-  }, [id]);
-  
+  }, [id, IdFromButtonClick]); // Adicionando 'id' como dependência
 
   return (
     <div>
       <input type="text" value={id} onChange={e => setId(e.target.value)} />
+      <button type="button" onClick={handleClick}>Fetch Post</button>
+      {error && <div>{error}</div>}
       <div>{post && post.title}</div>
-      {/*<ul>
-        {posts.map(post => (
-          <li key={post.id}>{post.title}</li>
-        ))}
-        </ul>*/}
     </div>
   );
 }
 
 export default DataFetching;
-
