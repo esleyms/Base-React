@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 //import CounterOne from './Components/CounterOne';
 import CounterTwo from './Components/CounterTwo';
+import CounterThree from './Components/CounterThree';
 
 
 class App extends Component {
@@ -9,7 +10,8 @@ class App extends Component {
     return (
       <div className="App">
        {/*<CounterOne/>*/}
-       <CounterTwo/>
+      {/* <CounterTwo/>*/}
+      <CounterThree/>
       </div>
     );
   }
