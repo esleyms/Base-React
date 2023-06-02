@@ -1,19 +1,19 @@
 import React from "react";
-import { ParentOne} from "./Components/ParentOne";
-import { ChildOne } from "./Components/ChildOne";
-import { GranParent } from "./Components/GranParent";
+import ParentTwo from "./Components/ParentTwo";
 
-
-function App() {
+const App = () => {
   return (
-    <div className="App">
-   <GranParent/>
-      
+    <div>
+      <h1>My App</h1>
+      <ParentTwo />
     </div>
   );
-}
+};
 
 export default App;
+
+
+
 
 
 
