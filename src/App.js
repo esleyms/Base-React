@@ -1,11 +1,12 @@
 import React from "react";
-import UseState from "./Components/UseState";
+import { UseReducer } from "./Components/UseReducer";
+
 
 function App() {
   return (
     <div className="App">
-    
-      <UseState />
+    <UseReducer/>
+      
     </div>
   );
 }
