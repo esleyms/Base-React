@@ -1,11 +1,11 @@
 import React from "react";
-import { ArrayUseState } from "./Components/ArrayUseState";
+import { Parent } from "./Components/Parent";
 
 
 function App() {
   return (
     <div className="App">
-   <ArrayUseState/>
+   <Parent/>
       
     </div>
   );
