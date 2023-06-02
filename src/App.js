@@ -1,11 +1,11 @@
 import React from "react";
-import { UseReducer } from "./Components/UseReducer";
+import { ArrayUseState } from "./Components/ArrayUseState";
 
 
 function App() {
   return (
     <div className="App">
-    <UseReducer/>
+   <ArrayUseState/>
       
     </div>
   );
