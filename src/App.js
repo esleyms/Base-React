@@ -1,20 +1,16 @@
-import React  from 'react';
+import React from 'react';
 import './App.css';
-import CounterOnee from './Components/CounterOnee';
-import CounterTwoo from './Components/CounterTwoo';
-
-
-
+import UserForm from './Components/UserForm';
 
 function App() {
   return (
+    <div className="App">
+      <UserForm />
     
-      <div className="App">
-       <CounterOnee/>
-       <CounterTwoo/>
-      </div>
-    
+    </div>
   );
 }
 
 export default App;
+
+
