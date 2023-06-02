@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useMeno } from "react";
 import { MemorizedChildFive } from "./MemorizedChildFive";
 
 export const ParentFive = () => {
@@ -8,6 +8,11 @@ export const ParentFive = () => {
     fnamae:"Bruce",
     lname: "Wayne"
   }
+
+
+    const memoizedPerson = useMeno(() => person, [] )
+    
+
   console.log("ParentFive Render");
 
   return (
@@ -15,7 +20,7 @@ export const ParentFive = () => {
       <div>{count}</div>
       <button onClick={() => setCount(c => c + 1)}>Count - {count}</button>
       <button onClick={() => setName("codevolution")}>Change name</button>
-      <MemorizedChildFive name={name} person={person} />
+      <MemorizedChildFive name={name} person={memoizedPerson} />
     </div>
   );
 };
