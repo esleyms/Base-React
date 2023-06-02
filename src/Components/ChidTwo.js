@@ -1,11 +1,11 @@
-import React from "react";
+//import React from "react";
 
-const ChildTwo = () => {
-  console.log("ChildTwo Render");
-  return <div>Child Component</div>;
-};
+//const ChildTwo = () => {
+ // console.log("ChildTwo Render");
+ // return <div>Child Component</div>;
+//};
 
-export default ChildTwo;
+//export default ChildTwo;
 
 
 

@@ -1,11 +1,11 @@
 import React from "react";
-import ParentTwo from "./Components/ParentTwo";
+import ParentThree from "./Components/ParentThree";
 
 const App = () => {
   return (
     <div>
-      <h1>My App</h1>
-      <ParentTwo />
+     
+      <ParentThree/>
     </div>
   );
 };
