@@ -1,17 +1,18 @@
 import React from "react";
-import './App.css'
-import { ParentFive } from "./Components/ParentFive";
+import './App.css';
+import ChildA from './ContextChildren';
 
 const App = () => {
   return (
     <div>
-     <ParentFive/>
-      
+      <ChildA />
     </div>
   );
 };
 
 export default App;
+
+
 
 
 
