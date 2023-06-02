@@ -1,16 +1,16 @@
-import React from 'react';
-import './App.css';
-import UserForm from './Components/UserForm';
+import React from "react";
+import UseState from "./Components/UseState";
 
 function App() {
   return (
     <div className="App">
-      <UserForm />
     
+      <UseState />
     </div>
   );
 }
 
 export default App;
+
 
 
